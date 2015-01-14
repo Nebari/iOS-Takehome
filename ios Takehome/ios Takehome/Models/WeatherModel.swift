@@ -8,12 +8,6 @@
 
 import UIKit
 
-func kelvinToFahrenheit(degreesKelvin: Double) -> Double {
-    let step1 = degreesKelvin - 273.15
-    let step2 = step1 * 1.8
-    return (step2 + 32)
-}
-
 enum WeatherCondition: String {
     case Clear = "Clear"
     case Rain = "Rain"
@@ -42,14 +36,14 @@ enum WeatherCondition: String {
 }
 
 struct Weather {
-    var name: String
-    var forecast: [ForecastDay]
+    var name: String?
+    var forecast: [ForecastDay]?
 }
 
 struct ForecastDay {
-    var date: NSDate
-    var highTemp: Double
-    var lowTemp: Double
-    var condition: WeatherCondition
-    var humidity: Double
+    var date: NSDate?
+    var highTemp: Double?
+    var lowTemp: Double?
+    var condition: WeatherCondition?
+    var humidity: Double?
 }
