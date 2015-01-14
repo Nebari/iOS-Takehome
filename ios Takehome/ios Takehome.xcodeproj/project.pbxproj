@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		93AAB9001A6616D2008C781B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB8FF1A6616D2008C781B /* AppDelegate.swift */; };
-		93AAB9021A6616D2008C781B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9011A6616D2008C781B /* ViewController.swift */; };
 		93AAB9051A6616D2008C781B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB9031A6616D2008C781B /* Main.storyboard */; };
 		93AAB9071A6616D2008C781B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB9061A6616D2008C781B /* Images.xcassets */; };
 		93AAB90A1A6616D2008C781B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AAB9081A6616D2008C781B /* LaunchScreen.xib */; };
 		93AAB9161A6616D2008C781B /* ios_TakehomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9151A6616D2008C781B /* ios_TakehomeTests.swift */; };
+		93AAB9201A661958008C781B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB91F1A661958008C781B /* MasterViewController.swift */; };
+		93AAB9221A661963008C781B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9211A661963008C781B /* DetailViewController.swift */; };
+		93AAB9261A6619D7008C781B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9251A6619D7008C781B /* WeatherModel.swift */; };
+		93AAB9281A662102008C781B /* OpenWeatherDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9271A662102008C781B /* OpenWeatherDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		93AAB8FA1A6616D2008C781B /* ios Takehome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios Takehome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AAB8FE1A6616D2008C781B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93AAB8FF1A6616D2008C781B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93AAB9011A6616D2008C781B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93AAB9041A6616D2008C781B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93AAB9061A6616D2008C781B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93AAB9091A6616D2008C781B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		93AAB90F1A6616D2008C781B /* ios TakehomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios TakehomeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AAB9141A6616D2008C781B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93AAB9151A6616D2008C781B /* ios_TakehomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_TakehomeTests.swift; sourceTree = "<group>"; };
+		93AAB91F1A661958008C781B /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = Controllers/MasterViewController.swift; sourceTree = "<group>"; };
+		93AAB9211A661963008C781B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		93AAB9251A6619D7008C781B /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherModel.swift; path = Models/WeatherModel.swift; sourceTree = "<group>"; };
+		93AAB9271A662102008C781B /* OpenWeatherDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenWeatherDownloader.swift; path = Models/OpenWeatherDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				93AAB8FF1A6616D2008C781B /* AppDelegate.swift */,
-				93AAB9011A6616D2008C781B /* ViewController.swift */,
 				93AAB9031A6616D2008C781B /* Main.storyboard */,
+				93AAB9241A6619B6008C781B /* Models */,
+				93AAB9231A6619AE008C781B /* Controllers */,
 				93AAB9061A6616D2008C781B /* Images.xcassets */,
 				93AAB9081A6616D2008C781B /* LaunchScreen.xib */,
 				93AAB8FD1A6616D2008C781B /* Supporting Files */,
@@ -110,6 +117,24 @@
 				93AAB9141A6616D2008C781B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93AAB9231A6619AE008C781B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93AAB91F1A661958008C781B /* MasterViewController.swift */,
+				93AAB9211A661963008C781B /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		93AAB9241A6619B6008C781B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93AAB9251A6619D7008C781B /* WeatherModel.swift */,
+				93AAB9271A662102008C781B /* OpenWeatherDownloader.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93AAB9021A6616D2008C781B /* ViewController.swift in Sources */,
+				93AAB9221A661963008C781B /* DetailViewController.swift in Sources */,
+				93AAB9201A661958008C781B /* MasterViewController.swift in Sources */,
+				93AAB9261A6619D7008C781B /* WeatherModel.swift in Sources */,
 				93AAB9001A6616D2008C781B /* AppDelegate.swift in Sources */,
+				93AAB9281A662102008C781B /* OpenWeatherDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
