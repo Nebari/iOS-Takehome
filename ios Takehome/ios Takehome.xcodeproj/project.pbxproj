@@ -16,6 +16,7 @@
 		93AAB9221A661963008C781B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9211A661963008C781B /* DetailViewController.swift */; };
 		93AAB9261A6619D7008C781B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9251A6619D7008C781B /* WeatherModel.swift */; };
 		93AAB9281A662102008C781B /* OpenWeatherDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9271A662102008C781B /* OpenWeatherDownloader.swift */; };
+		93AAB92A1A6622CD008C781B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AAB9291A6622CD008C781B /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		93AAB9211A661963008C781B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		93AAB9251A6619D7008C781B /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherModel.swift; path = Models/WeatherModel.swift; sourceTree = "<group>"; };
 		93AAB9271A662102008C781B /* OpenWeatherDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenWeatherDownloader.swift; path = Models/OpenWeatherDownloader.swift; sourceTree = "<group>"; };
+		93AAB9291A6622CD008C781B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		93AAB8FD1A6616D2008C781B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93AAB9291A6622CD008C781B /* SwiftyJSON.swift */,
 				93AAB8FE1A6616D2008C781B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -240,6 +243,7 @@
 				93AAB9221A661963008C781B /* DetailViewController.swift in Sources */,
 				93AAB9201A661958008C781B /* MasterViewController.swift in Sources */,
 				93AAB9261A6619D7008C781B /* WeatherModel.swift in Sources */,
+				93AAB92A1A6622CD008C781B /* SwiftyJSON.swift in Sources */,
 				93AAB9001A6616D2008C781B /* AppDelegate.swift in Sources */,
 				93AAB9281A662102008C781B /* OpenWeatherDownloader.swift in Sources */,
 			);
@@ -365,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios Takehome/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -375,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios Takehome/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
