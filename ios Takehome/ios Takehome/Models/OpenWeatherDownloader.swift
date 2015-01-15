@@ -8,7 +8,7 @@
 
 import Foundation
 
-func downloadSeattleWeatherForNumberOfDays(numberOfDays: Int = 5, completion: (weather: Weather) -> Void) {
+func downloadSeattleWeatherForNumberOfDays(numberOfDays: Int = 5, completion: (error: NSError?, weather: Weather?) -> Void) {
     let apiUrl = NSURL(string: "http://api.openweathermap.org/data/2.5/forecast/daily?q=Seattle&units=imperial&cnt=\(numberOfDays)")
     let urlRequest = NSURLRequest(URL: apiUrl!)
     
@@ -17,7 +17,7 @@ func downloadSeattleWeatherForNumberOfDays(numberOfDays: Int = 5, completion: (w
         let json = JSON(data: data, options: nil, error: nil)
         let foundWeather = weatherFromJson(json)
         
-        completion(weather: foundWeather)
+        completion(error: error, weather: foundWeather)
     })
     
     dataTask.resume()
@@ -36,11 +36,11 @@ func weatherFromJson(serverJson: JSON) -> Weather {
         var condition: WeatherCondition?
         var conditionText = subJson["weather"][0]["main"].string
         if conditionText == "Rain" {
-            condition = WeatherCondition.Rain
+            condition = WeatherCondition(rawValue: WeatherCondition.Rain.rawValue)
         } else if conditionText == "Clouds" {
-            condition = WeatherCondition.Clouds
+            condition = WeatherCondition(rawValue: WeatherCondition.Clouds.rawValue)
         } else if conditionText == "Clear" {
-            condition = WeatherCondition.Clear
+            condition = WeatherCondition(rawValue: WeatherCondition.Clear.rawValue)
         }
         
         var forecast = ForecastDay(date: date, highTemp: high, lowTemp: low, condition: condition, humidity: humidity)
