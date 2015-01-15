@@ -2,7 +2,7 @@
 
 Thank you for interviewing with Nebari!
 
-We have designed a project for you to work on at home so that you can show us your relevant iOS skills. We really appreciate you giving us your free time! Please do not spend more than 8 hours on this project.
+We have designed a project for you to work on at home so that you can show us your relevant iOS skills. We really appreciate you giving us your free time! Please do not spend more than 4 hours on this project.
 
 To begin clone this repository and add your relevant files. When you are finished please issue a pull request against this project. Thanks!
 
