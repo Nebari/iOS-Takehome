@@ -81,7 +81,7 @@ class ViewController: UITableViewController {
             var codeDictionary = codeArray.objectAtIndex(0) as NSDictionary
             var code = codeDictionary["id"] as Int
             weatherImageView.image = self.imageForWeather(code)
-            println("Code from codeDict = \(code)")
+
         }
         
         return cell
